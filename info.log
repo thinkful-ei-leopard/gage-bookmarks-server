@@ -1,0 +1,7 @@
+{"message":"Card with id 1 deleted.","level":"info"}
+{"message":"Card with id 1 deleted.","level":"info"}
+{"message":"Bookmark with id 1 not found","level":"error"}
+{"message":"Title was not provided","level":"error"}
+{"message":"Content was not provided","level":"error"}
+{"message":"New bookmark created Gage's Title with id 0a4d9242-c068-464d-bbeb-344e21efcee4","level":"info"}
+{"message":"New bookmark created Gage's Title with id 1c2e8b3f-f6cf-4e3b-82ee-4542a91bb03b","level":"info"}
