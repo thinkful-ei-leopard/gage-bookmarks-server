@@ -14,15 +14,16 @@ bookmarksRouter
   })
   .post(bodyParser, (req, res) => {
     const {title, content} = req.body;
-    if (!title) {
+    console.log(title, content);
+    if (!title || title.length === '') {
       logger.error('Title was not provided');
-      res
+      return res
         .status(400)
         .send('Title required');
     }
-    if (!content) {
+    if (!content || content.length === '') {
       logger.error('Content was not provided');
-      res
+      return res
         .status(400)
         .send('Content required');
     }
@@ -38,8 +39,8 @@ bookmarksRouter
 
     logger.info(`New bookmark created ${title} with id ${id}`);
     res
-      .status(204)
-      .end();
+      .status(201)
+      .send(newBookmark);
   });
 
 bookmarksRouter
